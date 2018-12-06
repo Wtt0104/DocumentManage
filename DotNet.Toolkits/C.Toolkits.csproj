@@ -1,0 +1,164 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{1F0E3164-1FAB-4214-A261-4EF1D3560DE0}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Toolkits</RootNamespace>
+    <AssemblyName>DotNet.Toolkits</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Aliyun.OSS, Version=2.8.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Aliyun.OSS.SDK.2.8.0\lib\Aliyun.OSS.dll</HintPath>
+    </Reference>
+    <Reference Include="ICSharpCode.SharpZipLib">
+      <HintPath>..\Lib\ICSharpCode.SharpZipLib.dll</HintPath>
+    </Reference>
+    <Reference Include="itextsharp">
+      <HintPath>..\Lib\itextsharp.dll</HintPath>
+    </Reference>
+    <Reference Include="log4net">
+      <HintPath>..\packages\Pagkage\log4net\log4net.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="StackExchange.Redis, Version=1.2.6.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\StackExchange.Redis.1.2.6\lib\net45\StackExchange.Redis.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.IO.Compression" />
+    <Reference Include="System.Runtime.Caching" />
+    <Reference Include="System.Runtime.Serialization.Formatters.Soap" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+    <Reference Include="ThoughtWorks.QRCode">
+      <HintPath>..\Lib\ThoughtWorks.QRCode.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DEncrypt\MD5.cs" />
+    <Compile Include="Image\Thumbnail.cs" />
+    <Compile Include="Image\WaterMark.cs" />
+    <Compile Include="Image\ImageThumb.cs" />
+    <Compile Include="Image\ImageValidCode.cs" />
+    <Compile Include="Redis\RedisCache.cs" />
+    <Compile Include="Redis\RedisClient.cs" />
+    <Compile Include="Redis\RedisConfig.cs" />
+    <Compile Include="String\StringCheck.cs" />
+    <Compile Include="IO\Log\LogHelper.cs" />
+    <Compile Include="IO\Serialize\SerializeHelper.cs" />
+    <Compile Include="IO\Xml\XmlHelper2.cs" />
+    <Compile Include="Net\FileDown.cs" />
+    <Compile Include="Net\FileUp.cs" />
+    <Compile Include="Net\HttpHelper.cs" />
+    <Compile Include="Net\IPHelper.cs" />
+    <Compile Include="Sys\Convert\ConvertHelper.cs" />
+    <Compile Include="Sys\Convert\ModelConvert.cs" />
+    <Compile Include="Net\NetHelper.cs" />
+    <Compile Include="Sys\DateTime\Time.cs" />
+    <Compile Include="Plugin\Baidu\LBS.cs" />
+    <Compile Include="String\Code\BarCodeToHTML.cs" />
+    <Compile Include="String\Code\ValidCode.cs" />
+    <Compile Include="Sys\Convert\MoneyConvert.cs" />
+    <Compile Include="String\Regex\ValidCheck.cs" />
+    <Compile Include="Sys\DateTime\CNDate.cs" />
+    <Compile Include="Sys\DateTime\DateWeek.cs" />
+    <Compile Include="Sys\DateTime\TimeSpanHelper.cs" />
+    <Compile Include="Sys\DateTime\TimeHelper.cs" />
+    <Compile Include="DEncrypt\DEncrypt.cs" />
+    <Compile Include="DEncrypt\HashEncode.cs" />
+    <Compile Include="DEncrypt\RSACryption.cs" />
+    <Compile Include="IO\Csv\CsvHelper.cs" />
+    <Compile Include="IO\File\DirFile.cs" />
+    <Compile Include="IO\File\FileOperate.cs" />
+    <Compile Include="IO\INI\INIFile.cs" />
+    <Compile Include="IO\Log\Log.cs" />
+    <Compile Include="IO\Pdf\PDFHelper.cs" />
+    <Compile Include="IO\Xml\XmlHelper.cs" />
+    <Compile Include="IO\Xml\XMLProcess.cs" />
+    <Compile Include="IO\Zip\SharpZip.cs" />
+    <Compile Include="Image\ImageHelper.cs" />
+    <Compile Include="Image\ImageDown.cs" />
+    <Compile Include="Image\ImageUpload.cs" />
+    <Compile Include="Plugin\Aliyun\Live\AliyunLive.cs" />
+    <Compile Include="Plugin\Aliyun\OSS\Storage.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="String\Code\QRcode.cs" />
+    <Compile Include="Sys\Convert\ConvertHelper2.cs" />
+    <Compile Include="String\Formula\FormulaExpress.cs" />
+    <Compile Include="String\PinYin\EcanConvertToCh.cs" />
+    <Compile Include="String\PinYin\PinYin.cs" />
+    <Compile Include="Sys\RandomExt\RandomHelper.cs" />
+    <Compile Include="Sys\RandomExt\RedPacket.cs" />
+    <Compile Include="Sys\Convert\ModelBind.cs" />
+    <Compile Include="Web\Base\ResponseData.cs" />
+    <Compile Include="Web\Base\DataPage.cs" />
+    <Compile Include="Web\Base\ResponseMessage.cs" />
+    <Compile Include="DEncrypt\DES.cs" />
+    <Compile Include="IO\File\FileHelper.cs" />
+    <Compile Include="Web\RequestHelper.cs" />
+    <Compile Include="Web\State\CacheExt.cs" />
+    <Compile Include="Web\State\CacheHelper.cs" />
+    <Compile Include="Web\State\CookieHelper.cs" />
+    <Compile Include="Web\State\DataCache.cs" />
+    <Compile Include="Web\Config\ConfigHelper.cs" />
+    <Compile Include="Web\Config\ConfigurationOperator.cs" />
+    <Compile Include="Web\Utility\IpHelper.cs" />
+    <Compile Include="Web\State\QueryString.cs" />
+    <Compile Include="String\Regex\RegexHelper.cs" />
+    <Compile Include="String\StringHelper.cs" />
+    <Compile Include="String\StringPlus.cs" />
+    <Compile Include="Web\Utility\HtmlHelper.cs" />
+    <Compile Include="Web\Utility\PageToHtml.cs" />
+    <Compile Include="Web\State\SessionHelper.cs" />
+    <Compile Include="Web\State\SessionHelper2.cs" />
+    <Compile Include="Web\Utility\UrlHelper.cs" />
+    <Compile Include="Web\Utils.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App\" />
+    <Folder Include="IO\Stream\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="IO\Log\log4net.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IO\Log\日志使用说明.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
