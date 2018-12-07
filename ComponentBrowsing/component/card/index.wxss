@@ -1,0 +1,4 @@
+/* component/card/index.wxss */
+.card{
+   margin-top: 20rpx;
+}

@@ -1,0 +1,4 @@
+/* component/menu/rightside/index.wxss */
+.hide{
+   display: none;
+}

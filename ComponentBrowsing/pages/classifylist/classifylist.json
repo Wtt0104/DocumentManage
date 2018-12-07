@@ -1,0 +1,7 @@
+{
+      "navigationBarTitleText": "分类列表",
+   "usingComponents": {
+      "t-card": "/component/card/index",
+      "i-toast": "/component/dist/toast/index"
+   }
+}

@@ -1,0 +1,5 @@
+<!--pages/classify/classify.wxml-->
+<view class='t-page'>
+<t-menu side="{{side}}" sideitem="{{side[0].Name}}" sideLowerMenu="{{side[0].SubMenu}}"></t-menu>
+</view>
+

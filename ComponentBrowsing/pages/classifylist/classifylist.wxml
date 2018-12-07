@@ -1,0 +1,10 @@
+<i-toast id="toast" />
+<view>
+
+   <view>
+      <block wx:for="{{card}}" wx:key="Id">
+         <t-card card="{{item}}">
+         </t-card>
+      </block>
+   </view>
+</view>

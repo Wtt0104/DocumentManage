@@ -1,0 +1,6 @@
+<!--component/card/index.wxml-->
+<view class="card">
+<i-card bindtap="cardClick" data-id="{{card.Id}}" title="{{card.Title}}" extra="{{card.CategoryName}}" >
+    <view slot="content">{{card.Describe}}</view>
+</i-card>
+</view>

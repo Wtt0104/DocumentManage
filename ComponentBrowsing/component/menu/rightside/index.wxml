@@ -1,0 +1,7 @@
+<!--component/menu/rightside/index.wxml-->
+<view>
+   <text class="{{side==''?'':'hide'}}">抱歉暂无数据</text>
+   <i-cell-group>
+      <i-cell bind:click="ClickSkip" wx:for="{{side}}" wx:key="Id" title="{{item.Name}}" is-link url="/pages/index/index" data-id="{{item.Id}}" ></i-cell>
+   </i-cell-group>
+</view>

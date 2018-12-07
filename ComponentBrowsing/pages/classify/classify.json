@@ -1,0 +1,6 @@
+{
+   "navigationBarTitleText": "组件分类",
+   "usingComponents": {
+      "t-menu": "/component/menu/index"
+   }
+}

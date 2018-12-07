@@ -1,0 +1,10 @@
+<!--pages/details/details.wxml-->
+<view class='content'>
+<i-input value="{{entity.CategoryName}}" title="类别" disabled />
+<i-input value="{{entity.Describe}}" title="功能描述" disabled />
+<i-input  title="组件文档" disabled/>
+<i-input  type="textarea" value="{{entity.DocText}}" disabled/>
+<i-input  value="{{entity.Submitter}}" title="提交人" disabled />
+<i-input  value="{{UploadTime}}" title="提交时间" disabled />
+<i-input  value="{{entity.ClickNumber}}" title="点击量" disabled />
+</view>

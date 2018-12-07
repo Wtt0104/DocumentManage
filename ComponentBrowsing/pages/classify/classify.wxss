@@ -1,0 +1,5 @@
+/* pages/classify/classify.wxss */
+.t-page{
+   height: 100%;
+   border-top:1rpx solid #e9eaec; 
+}

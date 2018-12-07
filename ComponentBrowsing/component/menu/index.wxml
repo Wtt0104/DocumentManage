@@ -1,0 +1,11 @@
+<!--component/menu/index.wxml-->
+<view class='t-content'>
+   <view class='t-left'>
+      <view class='side_list'>
+         <view class="side_item {{item.Name == sideitem?'active':''}}" wx:for="{{side}}" bindtap='bindside' data-classify="{{item}}" wx:key="{{item.Id}}">{{item.Name}}</view>
+      </view>
+   </view>
+   <view class='t-right'>
+      <t-rightside side="{{sideLowerMenu}}"></t-rightside>
+   </view>
+</view>

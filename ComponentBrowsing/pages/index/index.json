@@ -1,0 +1,8 @@
+{
+  "usingComponents": {
+    "t-card": "/component/card/index",
+    "i-toast": "/component/dist/toast/index",
+    "t-select": "/component/select/index",
+    "i-modal": "/component/dist/modal/index"
+  }
+}

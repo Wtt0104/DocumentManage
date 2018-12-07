@@ -1,0 +1,36 @@
+{
+   "pages": [
+      "pages/index/index",
+      "pages/classify/classify",
+      "pages/details/details",
+      "pages/classifylist/classifylist"
+   ],
+   "window": {
+      "navigationBarBackgroundColor": "#ffffff",
+      "navigationBarTitleText": "文档管理",
+      "navigationBarTextStyle": "black",
+      "navigationStyle": "default",
+      "backgroundColor": "#ffffff",
+      "enablePullDownRefresh": false
+   },
+   "tabBar": {
+      "borderStyle": "black",
+      "selectedColor": "#1c2438",
+      "backgroundColor": "#ffffff",
+      "color": "#bbbec4",
+      "list": [
+         {
+            "pagePath": "pages/index/index",
+            "selectedIconPath": "/images/homepage_fill.png",
+            "iconPath": "/images/homepage.png",
+            "text": "主 页"
+         },
+         {
+            "pagePath": "pages/classify/classify",
+            "selectedIconPath": "/images/classify_fill.png",
+            "iconPath": "/images/classify.png",
+            "text": "分 类"
+         }
+      ]
+   }
+}

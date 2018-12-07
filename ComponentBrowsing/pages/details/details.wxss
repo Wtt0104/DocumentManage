@@ -1,0 +1,5 @@
+/* pages/details/details.wxss */
+.content{
+   display: flex;
+   flex-direction: column;
+}

@@ -1,0 +1,14 @@
+<!--pages/index/index.wxml-->
+<i-toast id="toast" />
+<i-modal visible="{{ visible }}" bind:ok="Updata" bind:cancel="handleClose">
+  <view>是否关注: {{companyName}} 项目</view>
+</i-modal>
+<view>
+  <t-select bind:optionTap='tSelect' selectData="{{codes}}"></t-select>
+  <view>
+    <block wx:for="{{card}}" wx:key="Id">
+      <t-card card="{{item}}">
+      </t-card>
+    </block>
+  </view>
+</view>

@@ -1,0 +1,9 @@
+<!--component/select/index.wxml-->
+<view class='select_box'>
+   <view class='select' catchtap='selectTap'>
+      <text class='select_text' data-code='{{selectData[index].Code}}'>{{selectData[index].Name}}</text>
+   </view>
+   <view class='option_box' style='height:{{show?(selectData.length>5?300:selectData.length*60):0}}rpx;'>
+      <text class='option' style='{{index==selectData.length-1&&"border:0;"}}' wx:for='{{selectData}}' wx:key='{{index}}' data-index='{{index}}' data-code='{{item.Code}}' catchtap='optionTap'>{{item.Name}}</text>
+   </view>
+</view>

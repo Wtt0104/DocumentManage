@@ -1,0 +1,42 @@
+/* component/menu/index.wxss */
+
+.t-content {
+   height: 100%;
+   display: flex;
+   flex-direction: row;
+   justify-content: space-between;
+}
+
+.t-left {
+   background: white;
+   width: 30%;
+}
+
+.t-right {
+   background-color: #fff;
+   width: 70%;
+}
+
+.side {
+   background: white;
+}
+
+.side_list {
+   display: flex;
+   padding: 0rpx;
+   flex-direction: column;
+   justify-content: space-between;
+   text-align: center;
+   background-color: #e9eaec;
+   color: #495060
+}
+
+.side_item {
+   width: 100%;
+   padding: 35rpx 20rpx;
+   border-bottom: 1rpx solid #dddee1;
+}
+
+.active {
+   background-color: white;
+}
