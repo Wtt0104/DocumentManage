@@ -1,0 +1,41 @@
+.layui-table-cell{
+    font-family:PingFangSC-Regular,Microsoft YaHei,SimSun,Arial,Helvetica,Verdana,sans-serif!important;
+    font-size: 12px!important;
+    color: #333;
+    padding: 0 5px;
+}
+.layui-table, .layui-table-view{
+    margin: 0;
+}
+.layui-table thead tr{
+    background-color:#f8f8f8;
+    height: 28px;
+}
+.layui-table-view .layui-table th{
+    padding: 0;
+}
+.layui-table-view{
+    border: none;
+    border-bottom: 1px solid #ccc;
+}
+.layui-table tbody tr:hover{
+    background-color:#eee;
+}
+.layui-table-view .layui-table td{
+    padding: 0;
+}
+.layui-table-view .layui-table td{
+    cursor:pointer
+}
+.layui-table td{
+    border: 1px solid #ccc;
+}
+.lay-selected {
+    background-color: #2F94EE!important;
+    border-bottom: 1px solid #2F94EE!important;
+    border-right: 1px solid #2F94EE!important;
+    color: #fff!important;
+}
+.lay-selected>td>div{
+    color: #FFFFFF;
+}

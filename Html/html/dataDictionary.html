@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>组件查看</title>
+    <link href="../assets/font/css/font-awesome.min.css" rel="stylesheet" />
+    <link href="../assets/bootstrap/bootstrap.min.css" rel="stylesheet" />
+    <link id="layuicss-layer" rel="stylesheet" href="../css/layer.css" media="all">
+    <link rel="stylesheet" href="../assets/layui/css/layui.css">
+    <link rel="stylesheet" href="../css/dataDictionary.css">
+    <link rel="stylesheet" href="../css/jsTree.css">
+    <link rel="stylesheet" href="../css/table.css">
+    <script src="../assets/jquery/jquery.min.js"></script>
+    <script src="../assets/layui/layui.js"></script>
+    <script src="../js/base.js"></script>
+    <script src="../js/Dictionary.js"></script>
+</head>
+
+<body>
+    <div class="lr-layout lr-layout-left-center">
+        <div class="lr-layout-left">
+            <div class="lr-layout-wrap">
+                <div class="lr-layout-title lrlg ">
+                    组件分类
+                </div>
+                <div class="lr-layout-body" id="lr_left_tree">
+                </div>
+            </div>
+        </div>
+        <div class="lr-layout-center">
+            <div class="lr-layout-wrap">
+                <div class="lr-layout-title">
+                    <span class="lrlg">组件列表</span>
+                </div>
+                <div class="lr-layout-tool">
+                    <div class="lr-layout-tool-left">
+                        <div class="lr-layout-tool-item">
+                            <input id="txt_Keyword" type="text" class="form-control" placeholder="请输入标题" />
+                        </div>
+                        <div class="lr-layout-tool-item">
+                            <a id="btn_Search" class="btn btn-primary btn-sm"><i class="fa fa-search"></i>&nbsp;<span
+                                    class="lrlg">查询</span></a>
+                        </div>
+                    </div>
+                    <div class="lr-layout-tool-right">
+                        <div id="upload" class=" btn-group btn-group-sm">
+                            <a id="lr_refresh" class="btn btn-default">上传文档</a>
+                        </div>
+                        <div class=" btn-group btn-group-sm">
+                            <a id="lr_refresh" class="btn btn-default"><i class="fa fa-refresh"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <table class="layui-hide" id="gridtable" lay-filter="gridtable">
+                </table>
+                <div class="nodataDiv">
+                    <img src="../image/nodata.jpg" class="nodata">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
